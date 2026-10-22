@@ -40,8 +40,8 @@ Steam 評價分佈，好評率 88.1%：
 ```mermaid
 %%{init: {"themeVariables": {"pie1": "#2ea043", "pie2": "#d1242f"}}}%%
 pie showData
-    "好評" : 108200
-    "負評" : 14500
+    "好評" : 108,200+
+    "負評" : 14,500+
 ```
 
 | 項目 | 數量 | 佔比 |
@@ -88,11 +88,11 @@ Difficult / Tactical  85  █████████████████
 Gacha / Free to Play  74  ██████████████▊
 ```
 
-權重最高的是 Story Rich（98），最低是 Gacha（74）。
+權重最高的是 Story Rich（98），最低是 Gacha（74）
 
 ## JSON
 
-數字都集中在 repo 根目錄的 `metrics.json`，上方徽章直接讀這支檔案，改數字只要動它一個地方。
+數字都集中在 repo 根目錄的 `metrics.json`，上方徽章直接讀這檔案。
 
 下面的 payload 是給前端圖表用的版本，格式照 `visualization_generator`：
 
