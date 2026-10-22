@@ -1,4 +1,4 @@
-# 📊 《Limbus Company》SteamDB 全維度數據視覺化儀表板
+# Limbus Company SteamDB 全維度數據視覺化儀表板
 
 | 項目 | 內容 |
 | --- | --- |
