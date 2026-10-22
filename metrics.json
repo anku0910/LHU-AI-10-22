@@ -1,0 +1,39 @@
+{
+  "app_id": 1973530,
+  "title": "Limbus Company",
+  "developer": "Project Moon",
+  "updated_at": "2026-10-22T03:04:00Z",
+  "source": "SteamDB snapshot",
+  "live_ccu": 19200,
+  "peak_24h": 41954,
+  "peak_monthly": 71489,
+  "peak_season": 130870,
+  "peak_all_time": 157444,
+  "positive_reviews": 108200,
+  "negative_reviews": 14500,
+  "review_count": 122768,
+  "positive_ratio": 88.1,
+  "negative_ratio": 11.9,
+  "steamdb_rating": 87.01,
+  "rating_label": "Very Positive",
+  "gauges": {
+    "live_retention_index": 0.45,
+    "event_surge_multiplier": 3.75,
+    "sentiment_health_score": 8.7
+  },
+  "tags": {
+    "story_rich": 98,
+    "turn_based_strategy": 94,
+    "dark_fantasy": 91,
+    "difficult_tactical": 85,
+    "gacha_free_to_play": 74
+  },
+  "q3_peaks": [
+    { "point": "2026-07", "label": "瓦夜", "peak": 157000 },
+    { "point": "2026-07-mid", "label": "長草期", "peak": 38000 },
+    { "point": "2026-08", "label": "輪換", "peak": 71000 },
+    { "point": "2026-08-end", "label": "預熱", "peak": 42000 },
+    { "point": "2026-09", "label": "大版本", "peak": 130000 },
+    { "point": "2026-09-end", "label": "平穩", "peak": 41000 }
+  ]
+}

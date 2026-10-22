@@ -2,6 +2,11 @@
 
 2026/10/22 課堂練習，用 Google AI Studio 整理。資料來源 SteamDB，App ID 1973530，抓取時間 03:04 UTC。
 
+![平台](https://img.shields.io/badge/平台-Steam-66c0f4?style=flat-square&labelColor=1b2838&logo=steam&logoColor=white)
+![好評率](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/anku0910/LHU-AI-10-22/main/metrics.json&query=$.positive_ratio&label=好評率&suffix=%25&color=2ea043&style=flat-square&labelColor=1b2838&logo=steam&logoColor=white)
+![歷史峰值](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/anku0910/LHU-AI-10-22/main/metrics.json&query=$.peak_all_time&label=歷史峰值&suffix=%20CCU&color=1f6feb&style=flat-square&labelColor=1b2838&logo=steam&logoColor=white)
+![評論](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/anku0910/LHU-AI-10-22/main/metrics.json&query=$.review_count&label=評論&suffix=%20則&color=57606a&style=flat-square&labelColor=1b2838&logo=steam&logoColor=white)
+
 ## 人數
 
 SteamDB 上五個節點的同上人數：
@@ -27,16 +32,23 @@ xychart-beta
 
 ## 評價
 
-![好評](https://img.shields.io/badge/好評-88.1%25-2ea043?style=flat-square)
-![負評](https://img.shields.io/badge/負評-11.9%25-d1242f?style=flat-square)
+![好評](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/anku0910/LHU-AI-10-22/main/metrics.json&query=$.positive_ratio&label=好評&suffix=%25&color=2ea043&style=flat-square&labelColor=1b2838&logo=steam&logoColor=white)
+![負評](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/anku0910/LHU-AI-10-22/main/metrics.json&query=$.negative_ratio&label=負評&suffix=%25&color=d1242f&style=flat-square&labelColor=1b2838&logo=steam&logoColor=white)
+
+Steam 評價分佈，好評率 88.1%：
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"pie1": "#2ea043", "pie2": "#d1242f", "pieStrokeColor": "#ffffff", "pieStrokeWidth": "2px", "pieOuterStrokeColor": "#57606a", "pieTitleTextColor": "#1f2328", "pieTitleTextSize": "17px", "pieSectionTextColor": "#ffffff", "pieSectionTextSize": "14px", "pieLegendTextSize": "14px"}}}%%
+%%{init: {"themeVariables": {"pie1": "#2ea043", "pie2": "#d1242f"}}}%%
 pie showData
-    title "Steam 評價分佈（好評率 88.1%）"
-    "正面 108,200+" : 108200
-    "負面 14,500+" : 14500
+    "好評" : 108200
+    "負評" : 14500
 ```
+
+| 項目 | 數量 | 佔比 |
+| --- | ---: | ---: |
+| 好評 | 108,200+ | 88.1% |
+| 負評 | 14,500+ | 11.9% |
+| 合計 | 122,768 | 100% |
 
 總評論約 12 萬則，好評 88.1%，SteamDB 加權結算 87.01%，評級極度好評。
 
@@ -80,7 +92,9 @@ Gacha / Free to Play  74  ██████████████▊
 
 ## JSON
 
-供前端圖表使用，格式照 `visualization_generator`：
+數字都集中在 repo 根目錄的 `metrics.json`，上方徽章直接讀這支檔案，改數字只要動它一個地方。
+
+下面的 payload 是給前端圖表用的版本，格式照 `visualization_generator`：
 
 ```json
 {
